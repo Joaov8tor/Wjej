@@ -1,0 +1,40 @@
+-- Script Hub com Key e Link para Obter Key
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local KeyTextBox = Instance.new("TextBox")
+local SubmitButton = Instance.new("TextButton")
+local GetKeyButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+-- Configurações da GUI
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.Position = UDim2.new(0.5, -150, 0.5, -75)
+Frame.Size = UDim2.new(0, 300, 0, 150)
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = Frame
+
+KeyTextBox.Parent = Frame
+KeyTextBox.PlaceholderText = "Insira a Key aqui"
+KeyTextBox.Text = ""
+KeyTextBox.Size = UDim2.new(0, 250, 0, 30)
+KeyTextBox.Position = UDim2.new(0.5, -125, 0.2, 0)
+KeyTextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KeyTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+SubmitButton.Parent = Frame
+SubmitButton.Text = "Validar Key"
+SubmitButton.Size = UDim2.new(0, 100, 0, 30)
+SubmitButton.Position = UDim2.new(0.5, -50, 0.6, 0)
+SubmitButton.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+SubmitButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+GetKeyButton.Parent = Frame
+GetKeyButton.Text = "Obter Key"
+GetKeyButton.Size = UDim2.new(0, 100, 0, 30)
+GetKeyButton.Position = UDim2.new(0.5, -50, 0.8, 0)
+GetKeyButton.BackgroundColor3 = Color3.fromRGB(0, 85,
